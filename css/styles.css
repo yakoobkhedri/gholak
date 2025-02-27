@@ -239,6 +239,9 @@ footer ul li a{
 .w-372 {
     width: 372px;
 }
+.w-859 {
+    width: 859px;
+}
 /* height */
 .h-20{
     height: 20px;
@@ -259,8 +262,14 @@ footer ul li a{
 .h-113 {
     height: 113px;
 }
+.h-154 {
+    height: 188px;
+}
 .h-171 {
     height: 171%;
+}
+.h-859 {
+    height: 859px;
 }
 /* z index */
 .z-0 {
@@ -366,7 +375,7 @@ footer ul li a{
     background: linear-gradient(259.85deg, #2739B1 0%, #6323B1 100%);
 }
 .bg-gradient-4{
-    background: radial-gradient(78.97% 70.66% at 55.99% 74.58%, rgba(59, 14, 148, 0.009) 0%, rgba(255, 255, 255, 0.3) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px -50px 100px 0px #3B0E941A;
 }
 .bg-gray{
     background-color: #2B388F0D;
@@ -411,6 +420,10 @@ footer ul li a{
 }
 .rounded-40 {
     border-radius: 40px;
+}
+.rounded-t-circle{
+    border-top-right-radius: 263%;
+    border-top-left-radius: 115%;
 }
 /* outline-none */
 .outline-none {
@@ -501,7 +514,7 @@ footer ul li a{
         padding: 17px;
     }
     .mt-lg-474{
-        margin-top: 333px !important;
+        margin-top: 386px !important;
     }
     .p-lg-20{
         padding-top: 20px!important;
@@ -511,7 +524,12 @@ footer ul li a{
     }
 }
 @media (max-width: 992px) {
-  
+  .bottom-lg-64{
+    bottom: 80px;
+  }
+  .w-md-164{
+    width: 164px;
+  }
 }
 
 @media (max-width: 768px) {
