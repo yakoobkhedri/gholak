@@ -407,7 +407,9 @@ footer ul li a{
 
 /* responsive */
 @media (min-width: 1200px) {
-   
+   .shadow-1200{
+    box-shadow: 0px 5px 0px 0px #010B4F1A;
+   }
 }
 
 @media (max-width: 1200px) {
