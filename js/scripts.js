@@ -10,7 +10,18 @@ openMenu.addEventListener('click',function () {
 closeMenu.addEventListener('click',function () {
   menu.classList.remove('active');
 })
+
 // swiper
+
+var banner = new Swiper(".banner", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  autoplay: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 var educate = new Swiper(".educate", {
   slidesPerView: 2,
   spaceBetween: 26,
@@ -42,16 +53,4 @@ accordionBtn.forEach((item) => {
     item.classList.toggle('active');
     item.nextElementSibling.classList.toggle('active');
   })
-})
-
-// show more
-
-let showMore = document.getElementById('showMore');
-let moreText = document.getElementById('moreText');
-
-showMore.addEventListener('click',function () {
-  moreText.classList.add('active');
-  showMore.classList.remove('d-flex');
-  showMore.classList.add('d-none');
-  showMore.previousElementSibling.previousElementSibling.classList.remove('gradient-after');
 })

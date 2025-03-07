@@ -166,6 +166,13 @@ footer ul li a{
 .fs-60 {
     font-size: 60px !important;
 }
+/* swiper */
+.swiper-pagination-bullet{
+transition: all .4s;
+}
+.swiper-pagination-bullet-active{
+  background-color: #317FE3 !important;
+}
 /* after */
 .gradient-after{
     position: relative;
@@ -275,6 +282,9 @@ footer ul li a{
     height: 859px;
 }
 /* z index */
+.-z-1 {
+    z-index: -1 !important;
+}
 .z-0 {
     z-index: 0;
 }
@@ -288,6 +298,9 @@ footer ul li a{
 }
 .z-30 {
     z-index: 30;
+}
+.z-50 {
+    z-index: 50;
 }
 /* padding */
 .pt-50 {
@@ -339,6 +352,9 @@ footer ul li a{
 .-left-67{
     left: -67px;
 }
+.top-auto{
+    top: auto;
+}
 .-top-18{
     top: -18px;
 }
@@ -353,6 +369,9 @@ footer ul li a{
 }
 .bottom-71{
     bottom: 71px;
+}
+.-bottom-84{
+    bottom: -84px !important;
 }
 .bottom-101{
     bottom: 54px;
@@ -392,6 +411,9 @@ footer ul li a{
 .bg-gray-4{
     background-color: #2B388F33;
 }
+.bg-gray-5{
+    background-color: #010B4F0A;
+}
 /* box shadow */
 .shadow-1 {
     box-shadow: 0px 4px 0px 0px #010B4F1A;
@@ -404,6 +426,9 @@ footer ul li a{
 }
 .shadow-4{
     box-shadow: 0px 3px 20px 0px #0000000D;
+}
+.shadow-5{
+    box-shadow: 0px 2px 5px 0px #00000033;
 }
 /* border radius */
 .rounded-14 {
@@ -443,8 +468,14 @@ footer ul li a{
 .opacity-70 {
     opacity: 70%;
 }
+.opacity-80 {
+    opacity: 80%;
+}
 /* accordion */
-.accordionBox{
+.accordionBtn.active svg{
+    transform: rotate(180deg);
+}
+.accordionBox,.accordionBtn svg{
     transition: all .4s;
 }
 .accordionBox.active{
