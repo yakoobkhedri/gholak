@@ -413,6 +413,9 @@ transition: all .4s;
     border-bottom: 1px solid #010B4F33;
 }
 /* background */
+.bg-green{
+    background-color: #ddf0dd;
+}
 .bg-pink{
     background-color: rgba(255, 192, 203, 0.44);
 }
