@@ -80,13 +80,13 @@
     <!-- contact -->
     <section class="mt-5">
       <div class="container">
-         <div class="max-w-502 mx-auto">
+         <div class="max-w-500 mx-auto">
             <h6 class="text-main text-center">برای ارتباط با ما تماس بگیرید یا پیام بگذارید:</h6>
             <form class="mt-5" action="notif.html">
-              <input placeholder="نام خود را بنویسید" class="border-main mb-3 text-main fs-14 h-58 shadow-7 rounded-16 px-3 bg-transparent w-100 outline-none">
-              <input type="tel" placeholder="شماره تماس خود را بنویسید" class="mb-3 border-main text-main fs-14 h-58 shadow-7 rounded-16 px-3 bg-transparent w-100 outline-none">
+              <input required placeholder="نام خود را بنویسید" class="border-main mb-3 text-main fs-14 h-58 shadow-7 rounded-16 px-3 bg-transparent w-100 outline-none">
+              <input required id="phone" type="tel" placeholder="شماره تماس خود را بنویسید" class="mb-3 border-main text-main fs-14 h-58 shadow-7 rounded-16 px-3 bg-transparent w-100 outline-none">
               <textarea placeholder="پیام خود را بنویسید" class="mb-3 h-168 resize-none border-main text-main fs-14 shadow-7 rounded-16 p-3 bg-transparent w-100 outline-none"></textarea>
-              <button class="h-58 w-100 border-0 shadow-4 rounded-14 d-flex align-items-center justify-content-center text-white bg-gradient-3 position-relative">
+              <button disabled id="submitBtn" class="h-58 w-100 border-0 shadow-4 rounded-14 d-flex align-items-center justify-content-center text-white bg-gradient-3 position-relative">
                 <img alt="img" src="images/Rectangle 6.png" class="position-absolute -left-24 -top-18 bottom-0 h-171">
                 ارسال پیام
               </button>
@@ -209,6 +209,7 @@
   <script src="js/smooth-scroll.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/validatePhone.js"></script>
 </body>
 
 </html>

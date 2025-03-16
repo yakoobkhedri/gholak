@@ -110,6 +110,57 @@ footer ul li a{
 #menu li a:hover,footer ul li a:hover{
     color: #7552c0 !important;
 }
+/* flip card */
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    border-radius: 16px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 351px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 16px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-inner img{
+    transition: all .4s;
+  }
+  .flip-card-inner:hover img{
+    opacity: 0;
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    width: 100%;
+    border-radius: 168px;
+  }
+  
+  .flip-card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    transform: rotateY(180deg);
+    background: #4553a0;
+    padding: 29px;
+    padding-left: 9px;
+  }
 /* font size */
 .fs-8 {
     font-size: 8px;
@@ -228,8 +279,12 @@ transition: all .4s;
     max-width: 350px;
     width: 100%;
 }
+.max-w-500{
+    max-width: 500px;
+    width: 100%;
+}
 .max-w-502{
-    max-width: 502px;
+    max-width: 890px;
     width: 100%;
 }
 .max-w-676{
@@ -252,6 +307,9 @@ transition: all .4s;
 .w-140{
     width: 140px;
 }
+.w-180 {
+    width: 180px !important;
+  }
 .w-200{
     width: 200px;
 }
@@ -296,11 +354,17 @@ transition: all .4s;
 .h-171 {
     height: 171%;
 }
+.h-180 {
+    height: 180px;
+  }
 .h-859 {
     height: 859px;
 }
 .resize-none{
     resize: none;
+}
+.-mt-113{
+    margin-top: -113px;
 }
 /* z index */
 .-z-1 {
@@ -356,9 +420,15 @@ transition: all .4s;
 .lh-24 {
     line-height: 24px;
 }
+.gy-120 {
+    --bs-gutter-y: 120px;
+  }
 /* resize */
 .resize-none {
     resize: none;
+}
+.right-14{
+    right: 14px;
 }
 .-left-22{
     left: -22px;
@@ -452,6 +522,9 @@ transition: all .4s;
 .bg-gray-5{
     background-color: #010B4F0A;
 }
+.bg-gray-6 {
+    background-color: #F9FAFB;
+  }
 /* box shadow */
 .shadow-1 {
     box-shadow: 0px 4px 0px 0px #010B4F1A;
@@ -684,6 +757,9 @@ transition: all .4s;
     }
     .fs-sm-12{
         font-size: 12px;
+    }
+    .fs-sm-16{
+        font-size: 16px;
     }
     .fs-sm-18{
         font-size: 18px;
